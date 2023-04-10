@@ -18,11 +18,15 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+}
+
+.product-list div {
+  padding: 10px 20px;
+}
+
+.product-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 

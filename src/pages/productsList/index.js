@@ -1,16 +1,19 @@
-import React, { useEffect, useState} from "react";
+import React from "react";
 import Link from 'next/link';
 const ProductList = (props) => {
     const { data } = props;
 
     return (
-        <div>
+        <div className={'product-list'}>
             {
                 data.map(list => (
                     // eslint-disable-next-line react/jsx-key
+                    <>
                     <Link href={`/productsList/${list.id}`}>
                         <div> {list.id} {list.title}</div>
                     </Link>
+                    <hr/>
+                    </>
                 ))
             }
         </div>
