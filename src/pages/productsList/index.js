@@ -1,8 +1,8 @@
 import React from "react";
 import Link from 'next/link';
+
 const ProductList = (props) => {
     const { data } = props;
-
     return (
         <div className={'product-list'}>
             {
@@ -10,7 +10,7 @@ const ProductList = (props) => {
                     // eslint-disable-next-line react/jsx-key
                     <>
                     <Link href={`/productsList/${list.id}`}>
-                        <div> {list.id} {list.title}</div>
+                        <div> {list.id}: {list.title}</div>
                     </Link>
                     <hr/>
                     </>
