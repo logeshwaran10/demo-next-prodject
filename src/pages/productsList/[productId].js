@@ -5,15 +5,15 @@ const ProductId = (props) => {
     const { data } = props;
     return (
         <div className={'product-details'}>
-            <p>Product name:  {data?.title}</p>
-            <h3>Description: {data?.description}</h3>
+            <p>Product name: {data?.title}</p>
+            <h3>Product Description: {data?.description}</h3>
             <div className={'product-img'}>
                 <Image
                     src={data.image}
                     alt="Picture of the author"
                     width={500}
                     height={500}
-            />
+                />
             </div>
 
         </div>
